@@ -22,10 +22,10 @@
   }
 
 :root{
-    --color-gray:#D6E8DB;
+    --color-gray:#dddddd;
     --color-grayLite:#E3F2C1;
     --color-Black:#000;
-    --color-font:#99A98F;
+    --color-font:#545360;
 }
 
 *{
@@ -33,17 +33,30 @@ font-family: Vazir;
 direction: rtl;
 padding: 0%;
 margin: 0%;
-text-align: center;
-align-items: center;
+background-color: var(--color-grayLite);
+
 }
 h4{
   color: var(--color-font);
 
 }
+
 .FormShop{
 
   box-shadow: rgba(var(--color-font),0,0.0.5);
   width: 800px;
   height: 100%;
   background-color: var(--color-gray);
+  
+}
+.Summary{
+  background-color: var(--color-grayLite);
+  
+}
+.Cart{
+  background-color: #ffffff;
+}
+select{
+  box-sizing: border-box;
+  width: 100%;
 }
