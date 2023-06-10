@@ -36,25 +36,28 @@ margin: 0%;
 background-color: var(--color-grayLite);
 
 }
-h4{
+h4,h3{
   color: var(--color-font);
 
 }
 
 .FormShop{
-
-  box-shadow: rgba(var(--color-font),0,0.0.5);
   width: 800px;
   height: 100%;
   background-color: var(--color-gray);
-  
+  box-shadow:  5px 10px 8px 10px #888888;
+  border-radius: 15px;
 }
 .Summary{
   background-color: var(--color-grayLite);
-  
+  border-radius: 15px 0 0 15px;
+  padding: 25px;
+  border-radius: 15px;
 }
 .Cart{
   background-color: #ffffff;
+  border-radius: 15px 0 0 15px;
+  padding: 25px;
 }
 select{
   box-sizing: border-box;
