@@ -1,31 +1,31 @@
 @font-face {
-    font-family: 'IranSance';
-    src: url('../Fonts/Iranian\ Sans.ttf') format('ttf'),
-    url('../Fonts/Iranian\ Sans.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Byekan';
-    src: url('../Fonts/Yekan.ttf') format('ttf'),
-    url('../Fonts/Yekan.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Vazir';
-    src: url('../Fonts/Vazir-Bold.ttf') format('ttf'),
-    url('../Fonts/Vazir-Bold.ttf') format('truetype');
-  }
-  ::before,
-  ::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+  font-family: 'IranSance';
+  src: url('../Fonts/Iranian\ Sans.ttf') format('ttf'),
+  url('../Fonts/Iranian\ Sans.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Byekan';
+  src: url('../Fonts/Yekan.ttf') format('ttf'),
+  url('../Fonts/Yekan.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Vazir';
+  src: url('../Fonts/Vazir-Bold.ttf') format('ttf'),
+  url('../Fonts/Vazir-Bold.ttf') format('truetype');
+}
+::before,
+::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 :root{
-    --color-gray:#dddddd;
-    --color-grayLite:#E3F2C1;
-    --color-Black:#000;
-    --color-font:#545360;
+  --color-gray:#dddddd;
+  --color-grayLite:#E3F2C1;
+  --color-Black:#000;
+  --color-font:#545360;
 }
 
 *{
@@ -37,29 +37,29 @@ background-color: var(--color-grayLite);
 
 }
 h4,h3{
-  color: var(--color-font);
+color: var(--color-font);
 
 }
 
 .FormShop{
-  width: 800px;
-  height: 100%;
-  background-color: var(--color-gray);
-  box-shadow:  5px 10px 8px 10px #888888;
-  border-radius: 15px;
+width: 800px;
+height: 100%;
+background-color: var(--color-gray);
+box-shadow:  5px 10px 8px 10px #888888;
+border-radius: 15px;
 }
 .Summary{
-  background-color: var(--color-grayLite);
-  border-radius: 15px 0 0 15px;
-  padding: 25px;
-  border-radius: 15px;
+background-color: var(--color-grayLite);
+border-radius: 15px 0 0 15px;
+padding: 25px;
+border-radius: 15px;
 }
 .Cart{
-  background-color: #ffffff;
-  border-radius: 15px 0 0 15px;
-  padding: 25px;
+background-color: #ffffff;
+border-radius: 15px 0 0 15px;
+padding: 25px;
 }
 select{
-  box-sizing: border-box;
-  width: 100%;
+box-sizing: border-box;
+width: 100%;
 }
