@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'IranSance';
+    src: url('../Fonts/Iranian\ Sans.ttf') format('ttf'),
+    url('../Fonts/Iranian\ Sans.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Byekan';
+    src: url('../Fonts/Yekan.ttf') format('ttf'),
+    url('../Fonts/Yekan.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Vazir';
+    src: url('../Fonts/Vazir-Bold.ttf') format('ttf'),
+    url('../Fonts/Vazir-Bold.ttf') format('truetype');
+  }
+  ::before,
+  ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+:root{
+    --color-gray:#D6E8DB;
+    --color-grayLite:#E3F2C1;
+    --color-Black:#000;
+    --color-font:#99A98F;
+}
+
+*{
+font-family: Vazir;
+direction: rtl;
+padding: 0%;
+margin: 0%;
+text-align: center;
+align-items: center;
+}
+h4{
+  color: var(--color-font);
+
+}
+.FormShop{
+
+  box-shadow: rgba(var(--color-font),0,0.0.5);
+  width: 800px;
+  height: 100%;
+  background-color: var(--color-gray);
+}
