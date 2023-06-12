@@ -49,6 +49,7 @@ box-shadow:  -2px 6px 15px 8px #888888;
 border-radius: 15px;
 align-items: center;
 margin-right: 105px;
+
 }
 .Summary{
 background-color: var(--color-grayLite);
@@ -64,4 +65,7 @@ padding: 25px;
 select{
 box-sizing: border-box;
 width: 100%;
+}
+#button-addon1:hover{
+color: #000;
 }

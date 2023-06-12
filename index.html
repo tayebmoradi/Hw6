@@ -73,13 +73,13 @@
                            <div class="col" style="justify-content:space-between ;margin-top: 25px; background-color: #ffffff;"> 
                                <div class="row">
                                    <div class="col bg-white p-0 m-0" >
-                                       <button style="margin-right:15px ; background-color: #ffffff; border: none;">+</button>
+                                       <button id="btn1" style="margin-right:15px ; background-color: #ffffff; border: none;" value="+" onClick="plus()">+</button>
                                    </div>
                                    <div class="col bg-white" >
-                                        <span class="badge bg-light text-dark">1</span>
+                                        <span id="number" class="badge bg-light text-dark">1</span>
                                    </div>
                                    <div class="col bg-white p-0 m-0" >
-                                       <button style=" background-color: #ffffff; border: none;">-</button>
+                                       <button id="btn2" style=" background-color: #ffffff; border: none;" value="-" onClick="mines()">-</button>
                                    </div>
                                </div>
                            </div>
@@ -127,7 +127,7 @@
                       </div>
                       <br>
                       <div class="bg-white" style="float: right;">
-                      <i class="bi bi-arrow-left-short" style="background-color: #ffffff;"></i><span style="font-size: 12px; background-color: #ffffff;">بازگشت به فروشگاه</span>
+                      <i class="bi bi-arrow-right-short" style="background-color: #ffffff;"></i><span style="font-size: 12px; background-color: #ffffff;">بازگشت به فروشگاه</span>
                       </div>
                     </div>
                     <div class="col-4 Summary mt-3">
@@ -185,6 +185,6 @@
                 </div>
             </div>
     </div>
-
+<script src="./js/js.js"></script>
 </body>
 </html>
