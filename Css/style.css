@@ -69,3 +69,12 @@ width: 100%;
 #button-addon1:hover{
 color: #000;
 }
+.cont{
+  padding: 90px;
+}
+.bord{
+  border-radius: 25px;
+}
+.tend{
+  text-align: end;
+}
