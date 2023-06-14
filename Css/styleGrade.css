@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'IranSance';
+    src: url('../Fonts/Iranian\ Sans.ttf') format('ttf'),
+    url('../Fonts/Iranian\ Sans.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Byekan';
+    src: url('../Fonts/Yekan.ttf') format('ttf'),
+    url('../Fonts/Yekan.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Vazir';
+    src: url('../Fonts/Vazir-Bold.ttf') format('ttf'),
+    url('../Fonts/Vazir-Bold.ttf') format('truetype');
+  }
+  ::before,
+  ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+:root{
+    --color-gray:#D6E8DB;
+    --color-grayLite:#E3F2C1;
+    --color-Black:#000;
+    --color-font:#99A98F;
+}
+
+*{
+font-family: Vazir;
+padding: 0%;
+margin: 0%;
+
+align-items: center;
+}
+h4{
+  color: var(--color-font);
+}
+.Main{
+  width: 90%;
+  height: 100%;
+}
+.Header{
+  background-color: #535353 ;
+  padding: 15px;
+}
+.Line{
+  background-color: #8d8d8d ;
+  padding: 15px;
+}
+.Line1{
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+.Line2{
+  background-color: #ffffff;
+  padding: 15px;
+}
+.Footer{
+  background-color: #535353 ;
+  padding: 15px;
+  color: #ffffff;
+}
+.pagination a {
+  margin: 0 4px; /* 0 is for top and bottom. Feel free to change it */
+  background-color:#292828;
+  border: none;
+  color: white;
+}
+.pagination a:hover{
+background-color: #000;
+color: white;
+}
+
