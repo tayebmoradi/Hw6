@@ -1,37 +1,62 @@
-debugger;
+
 function plus()
 {
-   var test = document.getElementById('number').innerHTML++;
-    if(test)
+   var count = parseInt(document.getElementById('number').innerHTML++ ) ;
+  count++;
+ 
+   console.log(count);
+    if(count)
     {
-    var tot =parseFloat(document.getElementById('total').innerHTML) ;
-    
-    var total = tot + tot;
-    document.getElementById('total').innerHTML= total;
+   const price = 50000;
+   var total = count * price;
 
-    }
+   totalCommas = numberWithCommas(total);
+   document.getElementById('total').innerHTML= totalCommas;
+   }
 }
 
 function mines()
 {
- var check = document.getElementById('number').innerHTML;
+   var number = parseInt(document.getElementById('number').innerHTML) ;
+   if(number <= 1)
+   {
+      alert("عدد نمیتواند 0 و یا - باشد") 
+   }
+   else{
+      document.getElementById('number').innerHTML--;
+      number--;
+      console.log(number);
+      const price = 50000;
+      var total = number * price;
+      totalCommas = numberWithCommas(total);
+      document.getElementById('total').innerHTML= totalCommas;
+   }
+}
+
+function numberWithCommas(x) {
+   x = x.toString();
+   var pattern = /(-?\d+)(\d{3})/;
+   while (pattern.test(x))
+       x = x.replace(pattern, "$1,$2");
+   return x;
+}
+
+function removeAllCommas(string) {
+   return string.replaceAll(',', '');
+ }
+
+ function SumCount()
+ {
+   var x = document.getElementsByClassName('x');
+   if(x)
+   {
+  var classNumber = parseInt(document.getElementById('number').innerHTML);
+  var classNumber1 = parseInt(document.getElementById('number1').innerHTML);
+  var classNumber2 = parseInt(document.getElementById('number2').innerHTML);
+  var num =classNumber + classNumber1 +classNumber2;
+  console.log(num);
+  document.getElementById('show').innerHTML = num;
+   }
+  
+ }
  
-if(check <= 1)
-{
-   alert("عدد نمیتواند 0 و یا - باشد") 
-}
-else{
-   var test = document.getElementById('number').innerHTML--;
-    if(test)
-    {
-    var tott =parseFloat(document.getElementById('total').innerHTML) ;
-    
-    var tota = tott - tott;
-    document.getElementById('total').innerHTML= tota;
-
-    }
-}
-}
-
-
-

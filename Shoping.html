@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopingCart</title>
+    <link href="./Css/style.css" rel="stylesheet">
+    <link href="./Css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+</head>
+
+<body style="background-color: #E3F2C1;">
+    <div class="container cont">
+
+        <div class="FormShop">
+            <div class="row bord">
+
+                <div class="col-8 Cart">
+                    <div class="row ">
+                        <div class="col-6 bg-white">
+                            <h3 class="bg-white">سبد خرید</h3>
+                        </div>
+                        <div class="col-6 bg-white tend">
+                            <span  class="bg-white">
+                                <div class="row bg-white">
+                                     <div class="col-10 bg-white">
+                                        <p class="bg-white" onclick="SumCount()" id="show">3</p>
+                                    </div> 
+                                    <div class="col-2 bg-white">
+                                          عدد
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-white" style="margin-top: 7px !important; ">
+                        <hr>
+                        <div class="row bg-white">
+                            <div class="col bg-white">
+                                <img src="./img/images.png" width="70px">
+                            </div>
+                            <div class="col bg-white">
+                                <div class="row mt-3 bg-white">
+                                    <span class="bg-white" style="font-size: 9px; "> تی شرت</span>
+                                    <span class="bg-white">کوتون</span>
+                                </div>
+                            </div>
+                            <div class="col"
+                                style="justify-content:space-between ;margin-top: 25px; background-color: #ffffff;">
+                                <div class="row">
+                                    <div class="col bg-white p-0 m-0">
+                                        <button style="margin-right:15px ; background-color: #ffffff; border: none;">+</button>
+                                    </div>
+                                    <div class="col bg-white">
+                                        <span id="number2" class="badge number bg-light text-dark">1</span>
+                                    </div>
+                                    <div class="col bg-white p-0 m-0">
+                                        <button style=" background-color: #ffffff; border: none;">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-4 bg-white">
+                                <div class="row bg-white">
+                                    
+                                    <div class="col-10 bg-white text-end">
+                                        <p  class="text-end" style="font-size:15px ; background-color: #ffffff;">50,000</p>
+                                    </div>
+                                    <div class="col-2 bg-white" style="margin-right: -37px; font-size: 12px;">
+                                        <span class="bg-white text-start">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-white">
+                                <i class="bi bi-x mt-4" style="background-color: #ffffff; float:left; cursor: pointer;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white" style="margin-top: 7px !important; ">
+                        <hr>
+                        <div class="row bg-white">
+                            <div class="col bg-white">
+                                <img src="./img/t_shirt_icon_157416.png" width="70px" class="bg-white">
+                            </div>
+                            <div class="col bg-white">
+                                <div class="row mt-3 bg-white">
+                                    <span class="bg-white" style="font-size: 9px; "> تی شرت</span>
+                                    <span class="bg-white">کوتون</span>
+                                </div>
+                            </div>
+                            <div class="col"
+                                style="justify-content:space-between ;margin-top: 25px; background-color: #ffffff;">
+                                <div class="row">
+                                    <div class="col bg-white p-0 m-0">
+                                        <button id="btn1"
+                                            style="margin-right:15px ; background-color: #ffffff; border: none;"
+                                            value="+" onClick="plus()">+</button>
+                                    </div>
+                                    <div class="col bg-white">
+                                        <span id="number" class="badge number bg-light text-dark">1</span>
+                                    </div>
+                                    <div class="col bg-white p-0 m-0">
+                                        <button id="btn2" style=" background-color: #ffffff; border: none;" value="-"
+                                            onClick="mines()">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-4 bg-white">
+                                <div class="row bg-white">
+                                    
+                                    <div class="col-10 bg-white text-end">
+                                        <p id="total" class="text-end" style="font-size:15px ; background-color: #ffffff;">50,000</p>
+                                    </div>
+                                    <div class="col-2 bg-white" style="margin-right: -37px; font-size: 12px;">
+                                        <span class="bg-white text-start">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-white">
+                                <i class="bi bi-x mt-4" style="background-color: #ffffff; float:left; cursor: pointer;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white" style="margin-top: 7px !important; ">
+                        <hr>
+                        <div class="row bg-white">
+                            <div class="col bg-white">
+                                <img src="./img/images.png" width="70px">
+                            </div>
+                            <div class="col bg-white">
+                                <div class="row mt-3 bg-white">
+                                    <span class="bg-white" style="font-size: 9px; "> تی شرت</span>
+                                    <span class="bg-white">کوتون</span>
+                                </div>
+                            </div>
+                            <div class="col"
+                                style="justify-content:space-between ;margin-top: 25px; background-color: #ffffff;">
+                                <div class="row">
+                                    <div class="col bg-white p-0 m-0">
+                                        <button class="x"
+                                            style="margin-right:15px ; background-color: #ffffff; border: none;">+</button>
+                                    </div>
+                                    <div class="col bg-white">
+                                        <span id="number1" class="badge number bg-light text-dark">1</span>
+                                    </div>
+                                    <div class="col bg-white p-0 m-0">
+                                        <button class="x" style=" background-color: #ffffff; border: none;">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-4 bg-white">
+                                <div class="row bg-white">
+                                    
+                                    <div class="col-10 bg-white text-end">
+                                        <p class="text-end" style="font-size:15px ; background-color: #ffffff;">50,000</p>
+                                    </div>
+                                    <div class="col-2 bg-white" style="margin-right: -37px; font-size: 12px;">
+                                        <span class="bg-white text-start">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-white">
+                                <i class="bi bi-x mt-4"
+                                    style="background-color: #ffffff; float:left; cursor: pointer;"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="bg-white" style="float: right;">
+                        <i class="bi bi-arrow-right-short" style="background-color: #ffffff;"></i>
+                     <a href="" class="bg-white text-decoration-none"><span style="font-size: 12px; background-color: #ffffff;">بازگشت به فروشگاه</span></a>   
+                    </div>
+                </div>
+                <div class="col-4 Summary mt-3">
+                    <h4>توضیحات</h4>
+                    <hr>
+                    <div>
+                        <div class="row">
+                            <div class="col-6">
+                                <span>اقلام</span>
+                            </div>
+                            <div class="col-6" style="text-align: center;">
+                                <span>50,000 تومان</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 9px;">
+                            <span>خرید</span>
+                        </div>
+                        <div style="margin-top: 13px;">
+                            <select class="form-select" style="text-align: end; font-family: Vazir;" aria-label="Default select example">
+                                <option selected>انتخاب ارسال بسته</option>
+                                <option value="1">پست پیشتاز</option>
+                                <option value="2">پست معمولی</option>
+                                <option value="3">تیپاکس</option>
+                            </select>
+                        </div>
+                        <div style="margin-top: 13px;">
+                            <span>
+                                کد تخفیف
+                            </span>
+                        </div>
+                        <div class="mt-3">
+                            <div class="input-group mb-2">
+                                <button class="btn btn-outline-secondary bg-white"
+                                    style="border:none ; border-radius: 0px;" type="button" id="button-addon1"><i
+                                        class="bi bi-arrow-right-short bg-white"></i></button>
+                                <input type="text" class="form-control" placeholder="کد را وارد کنید"
+                                    style="border:none ; border-radius: 0px; text-align: end;">
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <span>قیمت کل</span>
+                            </div>
+                            <div class="col-6" style="text-align: center;">
+                                <span>50,000 تومان</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <input class="btn btn-dark" style="width: 90%; border-radius: 0px;" type="submit"
+                                value="پرداخت">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
