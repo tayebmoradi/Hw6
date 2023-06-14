@@ -36,6 +36,22 @@ direction: rtl;
 
 align-items: center;
 }
+.p{
+  font-size: 0.7rem; 
+  color: dimgray;
+}
+.fonts{
+  font-size: 1.5rem;
+}
+.mar{
+  margin-right: -55px;
+}
+.ruby{
+  display: ruby;
+}
+.contai{
+  background-color: #eeeeee;
+}
 h4{
   color: var(--color-font);
 }
