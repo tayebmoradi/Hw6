@@ -1,0 +1,58 @@
+*{
+ font-family: Tahoma;
+}
+.center{
+    margin: auto;
+    width: 70%;
+    border: 3px solid rgb(183, 183, 198);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.center form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+body{
+    direction: rtl;
+}
+.name{
+  width:  48%;
+}
+.l-name{
+    float: left;
+}
+input{
+    padding: 6px;
+    border-radius: 7px;
+    border: 1px solid;
+}
+textarea{
+    border-radius: 5px;
+    overflow: auto;
+    resize: none;
+    padding-top: 4px;
+    padding-bottom: 40px;
+    padding-right: 4px;
+}
+.checkboxp{
+  display: inline;
+}
+.check{
+    text-align: center;
+    margin: 1%;
+}
+button{
+  color: white;
+  background-color: #0074e8;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 3%;
+}
+.form{
+    padding: 10px;
+}
+.text-box{
+    height: 25px;
+}

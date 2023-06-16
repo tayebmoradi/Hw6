@@ -78,3 +78,6 @@ color: #000;
 .tend{
   text-align: end;
 }
+select option{
+  font-family: Vazir;
+}
